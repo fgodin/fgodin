@@ -5,6 +5,9 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
+    fontFamily: {
+      'sans': 'Ubuntu'
+    },
     extend: {},
   },
   plugins: [],
