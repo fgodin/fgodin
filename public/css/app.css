@@ -9629,6 +9629,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1536px;
   }
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -9639,6 +9642,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.block {
+  display: block;
 }
 .flex {
   display: flex;
@@ -9695,6 +9701,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-row {
   flex-direction: row;
 }
+.flex-col {
+  flex-direction: column;
+}
 .flex-nowrap {
   flex-wrap: nowrap;
 }
@@ -9718,6 +9727,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
 .border-b {
   border-bottom-width: 1px;
 }
@@ -9732,10 +9759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-neutral-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
-}
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -9752,8 +9775,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-6xl {
-  font-size: 3.75rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-9xl {
+  font-size: 8rem;
   line-height: 1;
 }
 .font-thin {
@@ -9762,8 +9797,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-medium {
   font-weight: 500;
 }
+.font-extralight {
+  font-weight: 200;
+}
+.font-light {
+  font-weight: 300;
+}
 .uppercase {
   text-transform: uppercase;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 .text-neutral-50 {
   --tw-text-opacity: 1;
@@ -9777,9 +9827,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
 }
-.text-blue-400 {
+.text-neutral-700 {
   --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
+  color: rgb(64 64 64 / var(--tw-text-opacity));
+}
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+.text-neutral-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
+}
+.text-neutral-800 {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
+}
+
+.before\:content-\[attr\(before\)\]::before {
+  --tw-content: attr(before);
+  content: var(--tw-content);
 }
 
 .hover\:text-neutral-50:hover {
