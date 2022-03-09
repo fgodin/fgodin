@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@layer utilities {
+    .top-screen {
+        min-height: calc(100vh - 64px);
+    }
+}
+
+@layer utilities {
+    .middle-screen {
+        min-height: calc(100vh - 60px);
+    }
+}
+
+@layer utilities {
+    .bottom-screen {
+        min-height: calc(100vh - 108px);
+    }
+}
+
+@layer utilities {
+    #home {
+        scroll-margin-top: 64px;
+    }
+    #about-me {
+        scroll-margin-top: 64px;
+    }
+    #projects {
+        scroll-margin-top: 64px;
+    }
+    #contact {
+        scroll-margin-top: 64px;
+    }
+}
