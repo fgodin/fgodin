@@ -1,50 +1,6 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @extends('layouts.app')
 
-    <link rel="preload" href="{{ asset('img/favicon.ico') }}" as="image">
-    <link rel="preload" href="{{ asset('css/app.css') }}" as="style">
-
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
-    <title>&#128187; Frédéric Godin</title>
-</head>
-<body class="bg-neutral-900 text-neutral-300 font-sans">
-    <!-- HEADER -->
-    <header class="z-50 sticky top-0 bg-neutral-900 border-b border-blue-400 shadow-sm shadow-neutral-900">
-        <div class="container mx-auto">
-            <div class="flex justify-center items-center h-16 px-3">
-                <div class="flex flex-1 justify-start w-auto text-3xl font-medium hover:animate-pulse">
-                    <a class="flex" href="/">
-                        <span><span class="text-blue-400">f</span>godin</span>
-                        <span class="text-blue-400 animate-ping">.</span>
-                        <span>dev</span>
-                    </a>
-                </div>
-                <nav class="hidden md:flex flex-1 justify-center space-x-4 text-lg font-thin">
-                    <a class="hover:animate-pulse hover:text-blue-400" href="#about-me">About Me</a>
-                    <a class="hover:animate-pulse hover:text-blue-400" href="#projects">Projects</a>
-                    <a class="opacity-50 pointer-events-none" href="#contact">Contact</a>
-                </nav>
-                <nav class="flex flex-1 justify-end md:order-1 space-x-4 text-lg font-thin">
-                    <a class="text-blue-400 hover:animate-pulse hover:text-neutral-300" href="https://github.com/fgodin" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
-                    <a class="text-blue-400 hover:animate-pulse hover:text-neutral-300" href="https://www.reddit.com/user/fgodin-dev" target="_blank"><i class="fa-brands fa-reddit-alien fa-lg"></i></a>
-                    <a class="text-blue-400 hover:animate-pulse hover:text-neutral-300" href="https://stackoverflow.com/users/5438729/fgodin" target="_blank"><i class="fa-brands fa-stack-overflow fa-lg"></i></a>
-                    <button class="toggle-menu md:hidden outline-none text-blue-400 hover:animate-pulse hover:text-neutral-300"><i class="fa fa-bars fa-lg"></i></button>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- RESPONSIVE NAV -->
-    <nav class="z-50 mobile-menu hidden md:hidden sticky top-16 py-3 flex flex-col justify-center items-center space-y-4 bg-neutral-700 border-b border-neutral-900 shadow-sm shadow-neutral-900">
-        <a class="hover:animate-pulse hover:text-blue-400" href="#about-me">About Me</a>
-        <a class="hover:animate-pulse hover:text-blue-400" href="#projects">Projects</a>
-        <a class="opacity-50 pointer-events-none" href="#contact">Contact</a>
-    </nav>
+    @section('content')
     <!-- HOME -->
     <section id="home" class="flex top-screen bg-home-background bg-cover bg-fixed">
         <div class="relative container mx-auto flex flex-col items-center space-y-5 p-5 2xl:p-0 2xl:pt-5 2xl:pb-5">
@@ -132,13 +88,4 @@
             </div>
         </div>
     </section>
-    <!-- FOOTER -->
-    <footer class="flex text-blue-400">
-        <div class="container mx-auto flex justify-center space-x-3 p-3">
-            <p class="font-thin text-sm italic opacity-50">Made with &#10084; and &#9749;.</p>
-            <p class="font-thin text-sm italic opacity-50">Copyright © 2022 fgodin.dev</p>
-        </div>
-    </footer>
-    <script rel="preload" src="{{ asset('js/app.js') }}" as="script"></script>
-</body>
-</html>
+    @endsection
