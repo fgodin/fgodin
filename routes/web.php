@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.landing');
-});
+Route::view('/', 'pages.landing');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
+Route::controller(ContactController::class)->group(function () {
+    Route::get('/contact', 'create');
+    Route::post('/contact', 'store');
 });
