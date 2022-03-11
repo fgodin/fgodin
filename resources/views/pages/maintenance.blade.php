@@ -7,7 +7,7 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <title>&#128187; Frédéric Godin</title>
     </head>
-    <body class="container m-auto flex flex-col justify-center items-center h-screen w-screen bg-neutral-900 text-neutral-300 font-sans">
+    <body class="container m-auto flex flex-col justify-center items-center h-screen w-screen bg-neutral-900 text-neutral-200 font-sans">
         <p class="flex text-6xl md:text-8xl font-medium hover:animate-pulse" href="#home">
             <span><span class="text-blue-300">f</span>godin</span>
             <span class="text-blue-300 animate-ping">.</span>

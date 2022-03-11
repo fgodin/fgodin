@@ -5,20 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 @layer utilities {
-    .top-screen {
+    .screen {
         min-height: calc(100vh - 64px);
     }
 }
 
 @layer utilities {
-    .middle-screen {
-        min-height: calc(100vh - 60px);
-    }
-}
-
-@layer utilities {
     .bottom-screen {
-        min-height: calc(100vh - 108px);
+        min-height: calc(100vh - 128px);
     }
 }
 
