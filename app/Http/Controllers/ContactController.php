@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use App\Models\Contact;
 
 class ContactController extends Controller
@@ -25,17 +26,23 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'fullName' => 'required|string|max:70',
+        $validator = Validator::make($request->all(), [
+            'full_name' => 'required|string|max:70',
             'email' => 'required|email|max:255',
-            'phoneNumber' => 'nullable|string|max:15',
-            'message' => 'required|string',
+            'phone_number' => 'nullable|regex:^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$^',
+            'message' => 'required|string|min:50',
         ]);
+
+        if ($validator->fails()) {
+            return back()
+                        ->withErrors($validator)
+                        ->withInput();
+        }
         
         $contact = new Contact;
-        $contact->fullName = $request->fullName;
+        $contact->full_name = $request->full_name;
         $contact->email = $request->email;
-        $contact->phoneNumber = $request->phoneNumber;
+        $contact->phone_number = $request->phone_number;
         $contact->message = $request->message;
         $contact->save();
         
