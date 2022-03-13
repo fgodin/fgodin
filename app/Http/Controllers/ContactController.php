@@ -30,6 +30,7 @@ class ContactController extends Controller
             'full_name' => 'required|string|max:70',
             'email' => 'required|email|max:255',
             'phone_number' => 'nullable|regex:^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$^',
+            'reason' => 'required|string',
             'message' => 'required|string|min:50',
         ]);
 
@@ -43,6 +44,7 @@ class ContactController extends Controller
         $contact->full_name = $request->full_name;
         $contact->email = $request->email;
         $contact->phone_number = $request->phone_number;
+        $contact->reason = $request->reason;
         $contact->message = $request->message;
         $contact->save();
         

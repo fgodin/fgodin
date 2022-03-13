@@ -28,7 +28,7 @@
     </section>
     <!-- ABOUT-ME -->
     <section id="about-me" class="flex flex-col screen bg-neutral-200 text-neutral-900">
-        <div class="container m-auto flex flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-5 p-5 md:p-0 md:pt-5 md:pb-5">
+        <div class="container m-auto flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:space-x-5 p-5 lg:p-0 lg:pt-5 lg:pb-5">
             <div class="relative flex flex-1 flex-col items-center p-3 rounded-lg border border-neutral-200 shadow-sm shadow-neutral-900">
                 <h3 class="uppercase font-black text-lg text-neutral-900">Experience</h3>
                 <p class="text-justify">Suspendisse aliquet tellus a venenatis fermentum. Pellentesque nibh eros, iaculis non bibendum non, facilisis sit amet dolor. Duis sit amet elit egestas, vulputate tortor sed, sagittis libero. Integer quis felis mi. Praesent venenatis porta dui, ut laoreet sem finibus in. Maecenas ut nisi nec mauris malesuada volutpat fringilla in odio. Nullam viverra mauris enim, quis dictum eros elementum et. Mauris quis neque at tortor efficitur porta et sed dui. Etiam pellentesque interdum arcu eu hendrerit. Sed luctus quis erat id fermentum. Etiam non congue massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque porttitor quis felis nec aliquet. Praesent ac imperdiet lacus, eu dignissim nunc. Sed luctus quis erat id fermentum. Etiam non congue massa. Curabitur vitae accumsan nunc. Proin sagittis leo ac lacus euismod, in vestibulum arcu sollicitudin.</p>
@@ -45,10 +45,10 @@
                 <div class="absolute top-3 right-3 text-blue-400"><i class="fa-solid fa-fingerprint fa-lg"></i></div>
             </div>
         </div>
-        <div class="container m-auto flex flex-col space-y-5 md:flex-row md:space-y-0 md:space-x-5 p-5 pt-0 md:p-0 md:pb-5">
+        <div class="container m-auto flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:space-x-5 p-5 pt-0 lg:p-0 lg:pb-5">
             <div class="flex flex-col items-center space-y-3 p-3 w-full rounded-lg bg-neutral-900 text-neutral-200 border border-neutral-200 shadow-sm shadow-neutral-900">
                 <h3 class="uppercase font-black text-lg">Recent Blog Posts</h3>
-                <div class="container mx-auto flex flex-col md:flex-row">
+                <div class="container mx-auto flex flex-col lg:flex-row">
                     <div class="flex flex-1 flex-col p-3">
                         <h3 class="uppercase underline font-black text-blue-400">This is an article</h3>
                         <p class="text-justify">Duis sit amet elit egestas, vulputate tortor sed, sagittis libero. Phasellus at cursus odio. Aliquam vitae magna sed nulla mattis ultrices nec consectetur quam. Nam dictum ultrices elit, sed sodales metus elementum quis. Vestibulum dignissim nisi ut porttitor faucibus. Nullam sem nulla, tincidunt quis ultrices id, pulvinar nec lectus. Phasellus malesuada eu diam egestas luctus. Vivamus efficitur, magna vitae commodo vehicula, felis nisl blandit libero, sed rutrum enim quam id lectus. Aliquam venenatis nisi at orci tempus, a elementum sem viverra. Fusce condimentum arcu dui, ac dapibus justo rhoncus vel. Nulla non pretium ex.</p>
@@ -72,7 +72,7 @@
     <section id="projects" class="flex bottom-screen bg-neutral-900 text-neutral-200">
         <div class="container mx-auto flex flex-col items-center p-5">
             <h1 class="uppercase text-3xl">Projects</h1>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full h-full p-5">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full h-full p-5">
                 <div class="flex flex-1 flex-col justify-between p-3 rounded-lg bg-neutral-400 shadow-md shadow-blue-400">
                     <h3 class="uppercase text-lg font-black text-neutral-900">Project Name</h3>
                     <p class="text-neutral-900">Project description goes here.</p>
