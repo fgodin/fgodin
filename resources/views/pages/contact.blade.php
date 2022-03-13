@@ -8,7 +8,7 @@
             @if (session('status'))
             <p class="self-center font-thin text-green-500">{{ session('status') }}</p>
             @endif
-            <form action="/contact" method="POST" class="flex flex-col w-1/2 space-y-3">
+            <form action="/contact" method="POST" class="flex flex-col w-full md:w-3/5 space-y-3">
                 {{ csrf_field() }}
                 <div class="flex flex-col xl:flex-row xl:justify-between space-y-3 xl:space-y-0">
                     <div class="flex flex-col w-full px-3">
